@@ -1,161 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Услуги - NeedAFix</title>
-    <meta property="og:title" content="Сервиз за компютри - Услуги" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/resources/images/computer.png" />
-    <meta
-      name="description"
-      content="Погледнете ценоразписите за услугите които предлагаме - диагностика, ремонт и подобряване на компютърни конфигурации и лаптопи."
-    />
-    <meta
-      name="keywords"
-      content="needafix, сервиз за компютри, сервиз за лаптопи, сервизни услуги"
-    />
-    <meta name="robots" content="follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="expires" content="3600" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
 
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-DF2TQQ8R2T"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+<head>
+  <title>Сервиз за компютри София</title>
+  <meta property="og:title" content="Сервиз за компютри София - Услуги" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/resources/images/computer.png" />
+  <meta name="description"
+    content="Погледнете ценоразписите за услугите които предлагаме - диагностика, ремонт и подобряване на компютърни конфигурации и лаптопи." />
+  <meta name="keywords" content="needafix, сервиз за компютри, сервиз за лаптопи, сервизни услуги" />
+  <meta name="robots" content="follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="expires" content="3600" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 
-    gtag("config", "G-DF2TQQ8R2T");
-  </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DF2TQQ8R2T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
 
-  <body>
-    <!-- Main body -->
-    <div class="body">
-      <h1 style="margin-top: 100px; text-align: center" class="thumbnail-text">
-        Услуги
-      </h1>
-      <!-- Main content/grid with scroll -->
-      <div class="image-scroll">
-        <!-- Frame 1 -->
-        <div class="picture-frame">
-          <!-- Clickable image leading to post page -->
-          <a
-            href="desktop-pc.html"
-            class="thumbnail"
-            title="Ценоразпис за компютри"
-          >
-            <img
-              width="500px"
-              height="300px"
-              src="resources/images/computer.png"
-              alt="настолен компютър"
-            />
-          </a>
-          <!-- Title of card -->
-          <h4 class="thumbnail-title thumbnail-text">Ценоразпис за компютри</h4>
-          <!-- Description of post -->
-          <p class="short-description thumbnail-text">
-            Кликнете тук ако се интересувате от цените ни за поправка и
-            диагностика на настолни компютри
-          </p>
-        </div>
-        <div class="picture-frame">
-          <!-- Clickable image leading to post page -->
-          <a
-            href="laptops.html"
-            class="thumbnail"
-            title="Ценоразпис за лаптопи"
-          >
-            <img
-              width="500px"
-              height="300px"
-              src="resources/images/laptop.png"
-              alt="настолен компютър"
-            />
-          </a>
-          <!-- Title of card -->
-          <h4 class="thumbnail-title thumbnail-text">Ценоразпис за лаптопи</h4>
-          <!-- Description of post -->
-          <p class="short-description thumbnail-text">
-            Кликнете тук ако се интересувате от цените ни за поправка и
-            диагностика на лаптопи
-          </p>
-        </div>
+  gtag("config", "G-DF2TQQ8R2T");
+</script>
+
+<body>
+  <!-- Main body -->
+  <div class="body">
+    <h1 style="margin-top: 100px; text-align: center" class="thumbnail-text">
+      Услуги
+    </h1>
+    <!-- Main content/grid with scroll -->
+    <div class="image-scroll">
+      <!-- Frame 1 -->
+      <div class="picture-frame">
+        <!-- Clickable image leading to post page -->
+        <a href="desktop-pc.html" class="thumbnail" title="Ценоразпис за компютри">
+          <img width="500px" height="300px" src="resources/images/computer.png" alt="настолен компютър" />
+        </a>
+        <!-- Title of card -->
+        <h4 class="thumbnail-title thumbnail-text">Ценоразпис за компютри</h4>
+        <!-- Description of post -->
+        <p class="short-description thumbnail-text">
+          Кликнете тук ако се интересувате от цените ни за поправка и
+          диагностика на настолни компютри
+        </p>
       </div>
-      <!-- Menu navbar -->
-      <div class="footer">
-        <!-- Menu button -->
-        <div class="menu" onclick="ToggleOverviewAnim()">
-          <!-- Cross that shows when the hamburger icon animation finishes  -->
-          <div class="cross">
-            <div id="cross-left" class="cross-bar"></div>
-            <div id="cross-right" class="cross-bar"></div>
-          </div>
-          <!-- Hamburger style button -->
-          <div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-          </div>
-        </div>
-        <!-- Site logo -->
-        <div class="logo">
-          <a href="index.html" title="Услуги">
-            <h1>NeedAFix</h1>
-          </a>
-        </div>
-      </div>
-      <!-- Menu tabs -->
-      <div id="menu-overview" class="menu-overview">
-        <a href="index.html" title="Начало">
-          <img id="home" src="resources/icons/home.png" alt="икона за къща" />
-          <div class="menu-text">Услуги</div>
+      <div class="picture-frame">
+        <!-- Clickable image leading to post page -->
+        <a href="laptops.html" class="thumbnail" title="Ценоразпис за лаптопи">
+          <img width="500px" height="300px" src="resources/images/laptop.png" alt="настолен компютър" />
         </a>
-        <div class="divider"></div>
-        <a href="contact.html" title="Връзка с нас">
-          <img
-            id="contact"
-            src="resources/icons/contact.png"
-            alt="телефонна икона"
-          />
-          <div class="menu-text">Връзка с нас</div>
-        </a>
-        <div class="divider"></div>
-        <a href="conditions.html" title="Условия за ползване">
-          <img
-            id="conditions"
-            src="resources/icons/conditions.png"
-            alt="икона за правилник"
-          />
-          <div class="menu-text">Условия за ползване</div>
-        </a>
-        <div class="divider"></div>
-        <a href="safety.html" title="Защита на данните”">
-          <img
-            id="safety"
-            src="resources/icons/safety.png"
-            alt="икона на човек"
-          />
-          <div class="menu-text">Защита на данните</div>
-        </a>
-        <div class="divider" style="margin-right: 20px"></div>
-        <a
-          class="dark-mode-button-outline"
-          title="Нощен режим"
-          onclick="DarkMode()"
-        >
-          <span class="dark-mode-button-circle"></span>
-        </a>
-        <div class="divider"></div>
+        <!-- Title of card -->
+        <h4 class="thumbnail-title thumbnail-text">Ценоразпис за лаптопи</h4>
+        <!-- Description of post -->
+        <p class="short-description thumbnail-text">
+          Кликнете тук ако се интересувате от цените ни за поправка и
+          диагностика на лаптопи
+        </p>
       </div>
     </div>
-    <script src="scripts/functionality.js"></script>
-  </body>
+    <!-- Menu navbar -->
+    <div class="footer">
+      <!-- Menu button -->
+      <div class="menu" onclick="ToggleOverviewAnim()">
+        <!-- Cross that shows when the hamburger icon animation finishes  -->
+        <div class="cross">
+          <div id="cross-left" class="cross-bar"></div>
+          <div id="cross-right" class="cross-bar"></div>
+        </div>
+        <!-- Hamburger style button -->
+        <div>
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+        </div>
+      </div>
+      <!-- Site logo -->
+      <div class="logo">
+        <a href="index.html" title="Услуги">
+          <h1>NeedAFix</h1>
+        </a>
+      </div>
+    </div>
+    <!-- Menu tabs -->
+    <div id="menu-overview" class="menu-overview">
+      <a href="index.html" title="Начало">
+        <img id="home" src="resources/icons/home.png" alt="икона за къща" />
+        <div class="menu-text">Услуги</div>
+      </a>
+      <div class="divider"></div>
+      <a href="contact.html" title="Връзка с нас">
+        <img id="contact" src="resources/icons/contact.png" alt="телефонна икона" />
+        <div class="menu-text">Връзка с нас</div>
+      </a>
+      <div class="divider"></div>
+      <a href="conditions.html" title="Условия за ползване">
+        <img id="conditions" src="resources/icons/conditions.png" alt="икона за правилник" />
+        <div class="menu-text">Условия за ползване</div>
+      </a>
+      <div class="divider"></div>
+      <a href="safety.html" title="Защита на данните”">
+        <img id="safety" src="resources/icons/safety.png" alt="икона на човек" />
+        <div class="menu-text">Защита на данните</div>
+      </a>
+      <div class="divider" style="margin-right: 20px"></div>
+      <a class="dark-mode-button-outline" title="Нощен режим" onclick="DarkMode()">
+        <span class="dark-mode-button-circle"></span>
+      </a>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <script src="scripts/functionality.js"></script>
+</body>
+
 </html>
