@@ -1,0 +1,83 @@
+.post-frame {
+    position: relative;
+    margin-top: 10%;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.image {
+    margin-top: 40px;
+    position: relative;
+    min-width: 320px;
+    min-height: 180px;
+    width: 100%;
+    height: auto;
+    max-width: 8vw;
+}
+
+.share-container {
+    display: block;
+    justify-content: space-between;
+}
+
+.twitter-share2 {
+    display: inline;
+    cursor: pointer;
+}
+
+.twitter-share2 div {
+    display: none;
+}
+
+.twitter-share2 img {
+    width: 30px;
+    height: 30px;
+}
+
+.facebook-share2 {
+    display: inline;
+    cursor: pointer;
+}
+
+.facebook-share2 div {
+    display: none;
+}
+
+.facebook-share2 img {
+    width: 30px;
+    height: 30px;
+}
+
+.post-divider {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.post-text {
+    position: relative;
+    text-transform: capitalize;
+}
+
+.filling {
+    height: 100px;
+}
+
+.author {
+    text-align: right;
+    margin-right: 30px;
+}
+
+#filling {
+    height: 30px;
+}
+
+@media only screen and (min-width:1024px) {}
+
+@media only screen and (min-width:768px) {}

@@ -1,0 +1,561 @@
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+.map {
+    width: 300px;
+    height: 300px;
+}
+/* ----- Start of scrollable main content/grid  ----- */
+
+.image-scroll {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 384px);
+    grid-gap: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+
+/* ----- Start of frame  ----- */
+
+.picture-frame {
+    margin-left: 5%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.thumbnail img {
+    min-width: 384px;
+    min-height: 216px;
+    width: 100%;
+    height: auto;
+    max-width: 80vw;
+}
+
+
+/* ----- Start of overlay classes  ----- */
+
+.twitter-share {
+    display: inline;
+    cursor: pointer;
+}
+
+.twitter-share div {
+    display: none;
+}
+
+.twitter-share img {
+    width: 30px;
+    height: 30px;
+}
+
+.facebook-share {
+    display: inline;
+    cursor: pointer;
+}
+
+.facebook-share div {
+    display: none;
+}
+
+.facebook-share img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* ----- End of overlay classes  ----- */
+
+
+/* ----- Start of thumbnail title  ----- */
+
+.thumbnail-text {
+    color: black;
+}
+
+.thumbnail-title {
+    text-transform: capitalize;
+    width: 50%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+
+/* ----- End of thumbnail title  ----- */
+
+
+/* ----- End of frame  ----- */
+
+
+/* ----- End of scrollable main content/grid  ----- */
+
+
+/* ----- Start of menu navbar  ----- */
+
+.footer {
+    clear: both;
+    background-color: rgb(22, 24, 27);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+}
+
+
+/* ----- Start of logo ----- */
+
+.logo {
+    position: relative;
+    text-align: center;
+    bottom: 10%;
+}
+
+.logo a:link {
+    text-decoration: none;
+}
+
+.logo a h1 {
+    color: white;
+}
+
+.logo h1 {
+    visibility: hidden;
+}
+
+
+/* ----- End of logo  ----- */
+
+
+/* ----- Start of menu ----- */
+
+.menu {
+    position: relative;
+    left: 5%;
+    cursor: pointer;
+}
+
+
+/* ----- Start of hamburger bars ----- */
+
+.menu-bar {
+    position: relative;
+    left: 0;
+    background-color: white;
+    margin: 5px 0 5px 0;
+    height: 8px;
+    width: 90%;
+}
+
+
+/* ----- End of hamburger bars ----- */
+
+
+/* ----- Start of X (Cross) that shows when the hamburger icon animation finishes ----- */
+
+.cross {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.cross-bar {
+    height: 8px;
+    width: 0px;
+    background-color: white;
+}
+
+#cross-left {
+    transform-origin: center;
+    transform: translate(0px, 9px) rotate(45deg);
+}
+
+#cross-right {
+    transform-origin: center;
+    transform: translate(-1px, 0px) rotate(-45deg);
+}
+
+
+/* ----- End of X (Cross) that shows when the hamburger icon animation finishes ----- */
+
+
+/* ----- End of Menu  ----- */
+
+
+/* ----- Start of menu tabs ----- */
+
+.menu-overview {
+    overflow: auto;
+    white-space: nowrap;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(47, 49, 54);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-overview a {
+    top: 10px;
+    justify-content: space-evenly;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 32px;
+}
+
+.divider {
+    top: 10%;
+    position: relative;
+    background-color: white;
+    width: 3px;
+    height: 80%;
+}
+
+.menu-overview a,
+.divider {
+    display: inline-grid;
+}
+
+.menu-overview a:link {
+    text-decoration: none;
+}
+
+.menu-overview a img {
+    color: white;
+    width: 70px;
+    height: 70px;
+}
+
+.menu-text {
+    position: relative;
+    visibility: hidden;
+    display: none;
+    color: white;
+}
+
+
+/* ----- End of menu tabs ----- */
+
+
+/* ----- Tablet ----- */
+
+@media only screen and (min-width: 768px) {
+    /* ----- Start of scrollable main content/grid  ----- */
+    .map {
+        width: 600px;
+        height: 450px;
+    }
+    .image-scroll {
+        margin-bottom: 0;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    /* ----- Start of Menu  ----- */
+    .footer {
+        left: 0;
+        width: 100px;
+        height: 100%;
+    }
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        height: 65px;
+    }
+    .menu {
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        width: 50px;
+    }
+    .cross {
+        left: 20px;
+    }
+    .menu-bar {
+        position: relative;
+        left: 0;
+        width: 50px;
+    }
+    .menu-overview {
+        overflow: auto;
+        top: 0;
+        left: -50px;
+        width: 150px;
+        height: 100%;
+    }
+    .menu-overview a {
+        top: 0px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 32px;
+    }
+    .divider {
+        top: 0;
+        left: 0px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        height: 3px;
+    }
+    .menu-overview a,
+    .divider {
+        display: flex;
+    }
+    .menu-text:link {
+        text-decoration: none;
+    }
+    .menu-overview a img {
+        position: relative;
+        color: white;
+        width: 70px;
+        height: 70px;
+        /* left: 42px; */
+    }
+    .menu-text {
+        visibility: hidden;
+        position: absolute;
+        text-align: center;
+        display: block;
+    }
+    #dark-mode-text {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    /* ----- End of Menu  ----- */
+    /* ----- Start of dark mode -----*/
+    /* ----- Start of switch ----- */
+    .dark-mode-button-outline {
+        box-sizing: border-box;
+        left: 0 !important; 
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    /* ----- End of switch ----- */
+    /* ----- End of dark mode -----*/
+}
+
+
+/* ----- End of Tablet ----- */
+
+
+/* ----- Edge case of categories needing to be shifter a bit because of the navbar ----- */
+
+@media only screen and (min-width: 931px) {
+    .image-scroll {
+        margin-left: 0;
+    }
+
+    .dark-mode-button-outline {
+        left: 30% !important;
+    }
+}
+
+
+/* ----- Desktop ----- */
+
+@media only screen and (min-width: 1024px) {
+    .image-scroll {
+        margin-top: 200px;
+        margin-left: 15%;
+    }
+    .picture-frame:hover {
+        background-color: rgb(216, 216, 216);
+    }
+    /* ----- Start of frame  ----- */
+    /* ----- Start of overlay classes  ----- */
+    .overlay {
+        position: absolute;
+        left: 20px;
+        top: 187px;
+        width: 384px;
+        height: 50px;
+        text-align: right;
+        opacity: 0;
+        transition: .5s ease;
+        background: rgba(255, 255, 255, 0);
+    }
+    .overlay :link {
+        text-decoration: none;
+    }
+    .twitter-share {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+    .facebook-share {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .picture-frame:hover .overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.726);
+    }
+    /* ----- End of overlay classes  ----- */
+    /* ----- End of frame  ----- */
+    /* ----- End of scrollable main content/grid  ----- */
+    .footer {
+        top: 0;
+        width: 100%;
+        height: 100px;
+    }
+    .logo {
+        position: absolute;
+        top: 10%;
+        bottom: 0;
+        /* width: 100px; */
+        left: 44%;
+        /* height: 65px; */
+    }
+
+    .logo h1 {
+        visibility: visible;
+    }
+    .menu {
+        margin-left: 10px;
+        position: relative;
+        top: 30px;
+        left: 0px;
+    }
+    .cross {
+        top: 2px;
+        left: 20px;
+    }
+    .menu-bar {
+        left: 0;
+    }
+    .menu-overview {
+        left: -200px;
+        width: 200px;
+        height: 100%;
+    }
+    .desktop {
+        top: 100px;
+    }
+    .menu-overview a {
+        top: 0px;
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+    .divider {
+        bottom: -100px;
+        left: 0px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        height: 3px;
+    }
+    .menu-overview a,
+    .divider {
+        display: block;
+    }
+    .menu-text:link {
+        text-decoration: none;
+    }
+    .menu-overview a img {
+        position: relative;
+        color: white;
+        top: 8px;
+        margin-right: 0;
+        width: 40px;
+        height: 40px;
+        left: 0;
+    }
+    .menu-text {
+        visibility: visible;
+        position: relative;
+        font-size: 28px;
+    }
+    .menu-overview a img,
+    .menu-text {
+        display: inline-block;
+    }
+    #dark-mode-text {
+        margin-bottom: 30px;
+        font-size: 28px;
+        visibility: hidden;
+        display: none;
+    }
+    .dark-mode-picture-frame:hover {
+        background-color: rgb(54, 57, 63);
+    }
+}
+
+
+/* ----- End of Desktop ----- */
+
+
+/* ----- Start of dark mode -----*/
+
+
+/* ----- Start of switch ----- *
+
+/* ----- Start of dark mode ----- */
+
+
+/* ----- Start of switch ----- */
+
+.dark-mode-button-outline {
+    position: relative;
+    width: 100px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid white;
+    border-radius: 30px;
+}
+
+.dark-mode-button-circle {
+    position: absolute;
+    background-color: white;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.dark-mode-button-circle-dark {
+    background-color: rgb(32, 32, 32);
+}
+
+
+/* ----- End of switch ----- */
+
+.dark-mode-body {
+    background-color: rgb(32, 34, 37)
+}
+
+.dark-mode-frame {
+    background-color: rgb(47, 49, 54) !important;
+}
+
+.dark-mode-background-color {
+    background-color: rgb(142, 146, 151) !important;
+}
+
+.dark-mode-text {
+    color: rgb(142, 146, 151) !important;
+}
+
+
+/* ----- End of dark mode -----*/

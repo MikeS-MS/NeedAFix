@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Връзка - NeedAFix</title>
+    <meta property="og:title" content="Връзка - NeedAFix"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="/resources/images/computer.png"/>
+    <meta name="description" content="Свържете се с нас или ни намерете на място ако имате някакви запитвания относно сервизните процедури."/>
+    <meta name="keywords" content="needafix, сервиз за компютри, сервиз за лаптопи, сервизни услуги връзка, сервиз контакт, сервиз телефон"/>
+    <meta name="robots" content="follow"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="3600"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="comments.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="post-frame">
+        <h2 class="post-text">Местоположение</h2>
+        <div class="post-divider"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2074.709311404083!2d23.361429561304774!3d42.659616710890084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sARDES.BG!5e0!3m2!1sbg!2sbg!4v1674112963665!5m2!1sbg!2sbg" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="post-divider"></div>
+        <h2 class="post-text">Работно време:<br>Понеделник - Петък<br>10:00 - 21:00</h2>
+        <div class="post-divider"></div>
+        <h2 class="post-text">Телефон: XXXXXXXXXX</h2>
+        <div class="post-divider"></div>
+        <h2 class="post-text">Свържете се с нас</h2>
+        <div class="post-divider"></div>
+        <div>
+            <form action="mailto:mikesg441@gmail.com" method="post" enctype="text/plain" name="Връзка относно NeedAFix" id="add-comment">
+                <label for="fname" class="post-text">Име:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname" class="post-text">Фамилия:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="email" class="post-text">e-mail адрес:</label><br>
+                <input type="email" id="email" name="email" value=""><br>
+                <label for="comment" class="post-text">Коментар:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Изпрати">
+            </form>
+        </div>
+        <!-- Добави връзки към социялни мрежи -->
+        <div class="filling-contact"></div>
+    </div>
+    <div class="footer">
+        <!-- Menu button -->
+        <div class="menu" onclick="ToggleOverviewAnim()">
+            <!-- Cross that shows when the hamburger icon animation finishes  -->
+            <div class="cross">
+                <div id="cross-left" class="cross-bar"></div>
+                <div id="cross-right" class="cross-bar"></div>
+            </div>
+            <!-- Hamburger style button -->
+            <div class="menu-button">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+        </div>
+        <!-- Site logo -->
+        <div class="logo">
+            <a href="index.html" title="Услуги">
+                <h1>NeedAFix</h1>
+            </a>
+        </div>
+    </div>
+    <!-- Menu tabs -->
+    <div id="menu-overview" class="menu-overview">
+        <a href="index.html" title="Начало">
+            <img id="home" src="resources/icons/home.png" alt="икона за къща">
+            <div class="menu-text">Услуги</div>
+        </a>
+        <div class="divider"></div>
+        <a href="contact.html" title="Връзка с нас">
+            <img id="contact" src="resources/icons/contact.png" alt="телефонна икона">
+            <div class="menu-text">Връзка с нас</div>
+        </a>
+        <div class="divider"></div>
+        <a href="conditions.html" title="Условия за ползване">
+            <img id="conditions" src="resources/icons/conditions.png" alt="икона за правилник">
+            <div class="menu-text">Условия за ползване</div>
+        </a>
+        <div class="divider"></div>
+        <a href="safety.html" title="Защита на данните”">
+            <img id="safety" src="resources/icons/safety.png" alt="икона на човек">
+            <div class="menu-text">Защита на данните</div>
+        </a>
+        <div class="divider" style="margin-right: 20px"></div>
+        <a class="dark-mode-button-outline" title="Нощен режим" onclick="DarkMode()">
+            <span class="dark-mode-button-circle"></span>
+        </a>
+        <div class="divider"></div>
+    </div>
+    <script src="scripts/functionality.js"></script>
+</body>
+
+</html>

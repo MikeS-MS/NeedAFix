@@ -1,0 +1,36 @@
+.filling-contact {
+    height: 500px;
+}
+
+.comment-container {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.comment-text {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #4d4f52;
+}
+
+.comment-divider {
+    margin-left: 5px;
+    height: 3px;
+    width: 30%;
+    left: 0;
+    background-color: rgb(168, 168, 168);
+    margin-bottom: 0;
+}
+
+.comment-content {
+    padding-bottom: 5px;
+}
+
+.dark-mode-comment-background {
+    background-color: #4d4f52
+}
