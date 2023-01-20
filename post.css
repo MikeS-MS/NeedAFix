@@ -62,7 +62,7 @@
 
 .post-text {
     position: relative;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .filling {
