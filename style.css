@@ -83,7 +83,6 @@ body {
 }
 
 .thumbnail-title {
-    text-transform: none;
     width: 50%;
     padding-bottom: 5px;
     border-bottom: 1px solid black;
