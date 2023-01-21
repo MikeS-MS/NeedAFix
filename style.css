@@ -6,6 +6,7 @@ body {
     width: 300px;
     height: 300px;
 }
+
 /* ----- Start of scrollable main content/grid  ----- */
 
 .image-scroll {
@@ -254,42 +255,50 @@ body {
 /* ----- Tablet ----- */
 
 @media only screen and (min-width: 768px) {
+
     /* ----- Start of scrollable main content/grid  ----- */
     .map {
         width: 600px;
         height: 450px;
     }
+
     .image-scroll {
         margin-bottom: 0;
         margin-left: 20%;
         margin-right: 20%;
     }
+
     /* ----- Start of Menu  ----- */
     .footer {
         left: 0;
         width: 100px;
         height: 100%;
     }
+
     .logo {
         position: absolute;
         top: 10px;
         left: 0;
         height: 65px;
     }
+
     .menu {
         position: absolute;
         top: 60px;
         left: 20px;
         width: 50px;
     }
+
     .cross {
         left: 20px;
     }
+
     .menu-bar {
         position: relative;
         left: 0;
         width: 50px;
     }
+
     .menu-overview {
         overflow: auto;
         top: 0;
@@ -297,6 +306,7 @@ body {
         width: 150px;
         height: 100%;
     }
+
     .menu-overview a {
         top: 0px;
         position: relative;
@@ -306,6 +316,7 @@ body {
         margin-bottom: 30px;
         font-size: 32px;
     }
+
     .divider {
         top: 0;
         left: 0px;
@@ -314,13 +325,16 @@ body {
         width: 100%;
         height: 3px;
     }
+
     .menu-overview a,
     .divider {
         display: flex;
     }
+
     .menu-text:link {
         text-decoration: none;
     }
+
     .menu-overview a img {
         position: relative;
         color: white;
@@ -328,25 +342,29 @@ body {
         height: 70px;
         /* left: 42px; */
     }
+
     .menu-text {
         visibility: hidden;
         position: absolute;
         text-align: center;
         display: block;
     }
+
     #dark-mode-text {
         margin-bottom: 30px;
         font-size: 28px;
     }
+
     /* ----- End of Menu  ----- */
     /* ----- Start of dark mode -----*/
     /* ----- Start of switch ----- */
     .dark-mode-button-outline {
         box-sizing: border-box;
-        left: 0 !important; 
+        left: 0 !important;
         margin-top: 5px;
         margin-bottom: 0px;
     }
+
     /* ----- End of switch ----- */
     /* ----- End of dark mode -----*/
 }
@@ -375,9 +393,11 @@ body {
         margin-top: 200px;
         margin-left: 15%;
     }
+
     .picture-frame:hover {
         background-color: rgb(216, 216, 216);
     }
+
     /* ----- Start of frame  ----- */
     /* ----- Start of overlay classes  ----- */
     .overlay {
@@ -391,23 +411,28 @@ body {
         transition: .5s ease;
         background: rgba(255, 255, 255, 0);
     }
+
     .overlay :link {
         text-decoration: none;
     }
+
     .twitter-share {
         position: absolute;
         top: 10px;
         right: 50px;
     }
+
     .facebook-share {
         position: absolute;
         top: 10px;
         right: 10px;
     }
+
     .picture-frame:hover .overlay {
         opacity: 1;
         background: rgba(0, 0, 0, 0.726);
     }
+
     /* ----- End of overlay classes  ----- */
     /* ----- End of frame  ----- */
     /* ----- End of scrollable main content/grid  ----- */
@@ -416,6 +441,7 @@ body {
         width: 100%;
         height: 100px;
     }
+
     .logo {
         position: absolute;
         top: 10%;
@@ -428,27 +454,33 @@ body {
     .logo h1 {
         visibility: visible;
     }
+
     .menu {
         margin-left: 10px;
         position: relative;
         top: 30px;
         left: 0px;
     }
+
     .cross {
         top: 2px;
         left: 20px;
     }
+
     .menu-bar {
         left: 0;
     }
+
     .menu-overview {
         left: -200px;
         width: 200px;
         height: 100%;
     }
+
     .desktop {
         top: 100px;
     }
+
     .menu-overview a {
         top: 0px;
         position: relative;
@@ -458,6 +490,7 @@ body {
         margin-bottom: 10px;
         font-size: 32px;
     }
+
     .divider {
         bottom: -100px;
         left: 0px;
@@ -466,13 +499,16 @@ body {
         width: 100%;
         height: 3px;
     }
+
     .menu-overview a,
     .divider {
         display: block;
     }
+
     .menu-text:link {
         text-decoration: none;
     }
+
     .menu-overview a img {
         position: relative;
         color: white;
@@ -482,21 +518,25 @@ body {
         height: 40px;
         left: 0;
     }
+
     .menu-text {
         visibility: visible;
         position: relative;
         font-size: 28px;
     }
+
     .menu-overview a img,
     .menu-text {
         display: inline-block;
     }
+
     #dark-mode-text {
         margin-bottom: 30px;
         font-size: 28px;
         visibility: hidden;
         display: none;
     }
+
     .dark-mode-picture-frame:hover {
         background-color: rgb(54, 57, 63);
     }
